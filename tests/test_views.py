@@ -1,8 +1,8 @@
 import pytest
 from flask import json
-from website import create_app
-from website.models import Product, Cart
-from website.models import db
+from app import create_app
+from app.models import Product, Cart
+from app.models import db
 
 @pytest.fixture
 def app():
@@ -23,13 +23,13 @@ def setup_database(app, mocker):
     Sets up a mocked database environment for each test.
     """
     with app.app_context():
-        mocker.patch('website.db.session.add')
-        mocker.patch('website.db.session.commit')
+        mocker.patch('app.db.session.add')
+        mocker.patch('app.db.session.commit')
 def test_add_new_item_to_cart_with_quantity_1(mocker, client, app):
     with app.app_context():
         product_mock = Product(id=1, product_name='Test Product', current_price=10.0, in_stock=10)
-        mocker.patch('website.models.Product.query.get', return_value=product_mock)
-        mocker.patch('website.models.Cart.query.filter_by', return_value=None)
+        mocker.patch('app.models.Product.query.get', return_value=product_mock)
+        mocker.patch('app.models.Cart.query.filter_by', return_value=None)
         data = {'product_id': 1, 'quantity': 1}
         response = client.post('/add-to-cart', data=json.dumps(data), content_type='application/json')
         assert response.status_code == 200

@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, flash, redirect, request, jsonify
-from website.models import Product, Cart, Order
+from app.models import Product, Cart, Order
 from flask_login import login_required, current_user
-from website import db
+from app import db
 
 
 views = Blueprint('views', __name__)

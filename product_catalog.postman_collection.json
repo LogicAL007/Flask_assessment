@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "cd168316-6d1a-47fd-96c2-525e77ab63d4",
+		"name": "product_catalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26119003",
+		"_collection_link": "https://www.postman.com/research-saganist-46064880/workspace/fastapi-testing/collection/26119003-cd168316-6d1a-47fd-96c2-525e77ab63d4?action=share&source=collection_link&creator=26119003"
+	},
+	"item": [
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

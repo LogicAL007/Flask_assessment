@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from website.models import Product
-from website import db
+from app.models import Product
+from app import db
 
 productsearch = Blueprint('productsearch', __name__)
 

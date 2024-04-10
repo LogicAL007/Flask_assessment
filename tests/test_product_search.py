@@ -1,8 +1,8 @@
 import pytest
 from flask import url_for, json
-from website import create_app, db
-from website.models import Product
-from website import create_app
+from app import create_app, db
+from app.models import Product
+from app import create_app
 
 @pytest.fixture
 def client():

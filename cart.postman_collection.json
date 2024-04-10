@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "65f7bc1a-4490-49ab-8489-4288793cdd2a",
+		"name": "cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26119003",
+		"_collection_link": "https://www.postman.com/research-saganist-46064880/workspace/fastapi-testing/collection/26119003-65f7bc1a-4490-49ab-8489-4288793cdd2a?action=share&source=collection_link&creator=26119003"
+	},
+	"item": [
+		{
+			"name": "views_add_to_cart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "views_show_cart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "views_minus_cart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "views_remove_cart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "views_plus_cart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

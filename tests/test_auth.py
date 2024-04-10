@@ -1,12 +1,12 @@
 import pytest
 from flask import Flask
-from website.models import Customer
-from website import db
-from website.auth import change_password
+from app.models import Customer
+from app import db
+from app.auth import change_password
 from unittest.mock import patch
 from flask import url_for
-from website import create_app
-from website.models import db
+from app import create_app
+from app.models import db
 
 @pytest.fixture
 def app():
