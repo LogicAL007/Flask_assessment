@@ -8,7 +8,7 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home_page():
-    return "<p>This project was done by Team B in Data Epic</p>"
+    return "<p>Ecommerce Project</p>"
 
 
 @views.route('/add-to-cart/<item_id>')
