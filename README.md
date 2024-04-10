@@ -7,6 +7,8 @@ This Flask API underpins an e-commerce application, supporting user authenticati
 Product data originates from the [Flipkart Fashion Products Dataset](https://www.kaggle.com/datasets/aaditshukla/flipkart-fasion-products-dataset) on Kaggle, offering a diverse array of fashion items. The dataset underwent initial cleaning to align with the API's database schema.
 
 ## Data Schema
+![Artwork_schema (1)](https://github.com/LogicAL007/Flask_assessment/assets/122959675/ba22f494-5046-4dcd-9354-a1f5345ac718)
+
 - **User**: Holds user details like ID, username, email, and password_hash. Links to orders and cart items.
 - **Product**: Details product ID, name, description, price, and image URLs from the Kaggle dataset.
 - **Cart**: Tracks items a user plans to purchase, noting product IDs and quantities.
